@@ -1,8 +1,13 @@
-# Portfolio (2025)
+# Rajvir Singh — AI & ML Developer Portfolio
 
-Personal portfolio site: project case studies, lightweight 3D and shader demos, bilingual copy (English and German).
+I am a Computer Science student focused on AI/ML, Backend Development, and Software Engineering. This is my personal interactive portfolio showcasing my AI and web projects.
 
-Built with **Vue 3**, **TypeScript**, and **Vite**. Motion via **GSAP** and **Lenis**, 3D via **three.js**, audio via **Howler**. GLSL is compiled through **vite-plugin-glsl**.
+## Tech Stack
+
+Built with **Vue 3**, **TypeScript**, and **Vite**. 
+- **Motion & Animation**: GSAP and Lenis
+- **3D Graphics**: three.js, WebGL, compiled through vite-plugin-glsl
+- **Audio**: Howler.js
 
 ## Scripts
 
@@ -13,31 +18,29 @@ Built with **Vue 3**, **TypeScript**, and **Vite**. Motion via **GSAP** and **Le
 | `npm run preview` | Serve the production build locally |
 | `npm run typecheck` | Typecheck only (`vue-tsc -b`) |
 
-## Content
+## Setup Instructions
 
-- **Projects**: `src/content/projects/{en,de}/<slug>.ts` — copy, tags, media, links. Slugs must align with `projectIds` in `src/content/projects/index.ts`.
-- **Previews / listing**: `src/content/projects/previews/`.
-- **Tags**: variants and labels live in `src/components/tagVariants.ts` (used by `Tag.vue` and content types).
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
 
-## Stack (high level)
+## Project Structure
 
-- Vue 3 (`<script setup>`), SCSS with shared mixins (`src/assets/styles/`)
-- i18n helpers under `src/i18n/`
-- WebGL / GLSL under `src/three/` where applicable
+- **`src/content/projects/`**: Project data, listings, and configurations
+- **`src/components/`**: Core Vue components and UI elements
+- **`src/three/`**: WebGL and Three.js 3D scene setup
+- **`src/assets/`**: Images, styles, and static assets
+- **`src/i18n/`**: Bilingual support and translations
 
 ## Credits & Attribution
 
-This project was created and designed by David Heckhoff.
+This portfolio is a customized derivative work based on the original project by **David Heckhoff**.
 
-If you use this project or substantial parts of its source code as a base for your own portfolio or work, attribution must be preserved.
+- **Original Creator**: David Heckhoff
+- **Original Portfolio**: [https://david-hckh.com](https://david-hckh.com)
 
-Please keep:
+If you use this project or substantial parts of its source code as a base for your own portfolio or work, attribution must be preserved. Please keep existing credit comments in the source code, this attribution section in the README, and a visible reference to the original project.
 
-- existing credit comments in the source code
-- this attribution section in the README
-- a visible reference to the original project/repository in derivative works
-
-Original portfolio:
--> https://david-hckh.com
+- **Music**: Produced by [HM Surf](https://soundcloud.com/hmsurf)
 
 Commercial reuse or redistribution of substantial portions of this project without permission is prohibited.
